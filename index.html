@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Question</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- LOADING -->
+
+<section id="loading" class="screen active">
+
+    <div class="terminal">
+
+        <p>Initializing...</p>
+        <p class="hidden">Loading personality profile...</p>
+        <p class="hidden">Loading languages...</p>
+        <p class="hidden">Looking for available dates...</p>
+
+        <div class="bar">
+            <div id="progress"></div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MAIN -->
+
+<section id="main" class="screen">
+
+    <div class="card">
+
+        <h1>Buna, Madalina</h1>
+
+        <p class="subtitle">
+
+            I made a tiny website because sending a normal message felt too boring.
+
+        </p>
+
+        <div class="facts">
+
+            <div>✓ 33 years old</div>
+
+            <div>
+
+                ✓ Speaks
+
+                <div class="tags">
+
+                    <span>Romanian</span>
+                    <span>English</span>
+                    <span>Français</span>
+                    <span>Italiano</span>
+                    <span>Español</span>
+
+                </div>
+
+            </div>
+
+            <div>✓ Loves dogs</div>
+
+            <div>✓ Somehow knows where the best bedding comes from</div>
+
+        </div>
+
+        <button id="continueBtn">
+
+            Continue →
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- SURVEY -->
+
+<section id="survey" class="screen">
+
+    <div class="card">
+
+        <h2>Scientific Survey</h2>
+
+        <p>
+
+            Cat bumbac crez ca au lenjeriile din Pucioasa?
+
+        </p>
+
+        <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            id="slider">
+
+        <button id="surveyBtn">
+
+            Submit
+
+        </button>
+
+        <div id="surveyResult"></div>
+
+    </div>
+
+</section>
+
+<!-- INVITATION -->
+
+<section id="invite" class="screen">
+
+    <div class="card">
+
+        <h2>One last thing.</h2>
+
+        <p>
+
+            Would you let me steal one evening from your calendar?
+
+        </p>
+
+        <button id="yesBtn">
+
+            Yes
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- DATES -->
+
+<section id="dates" class="screen">
+
+    <div class="card">
+
+        <h2>Available evenings</h2>
+
+        <p>
+
+            I'm free after <strong>20:00</strong>, so I've narrowed it down to these evenings.
+
+        </p>
+
+        <div class="dates">
+
+            <button class="date">Tuesday<br>July 7</button>
+            <button class="date">Wednesday<br>July 8</button>
+            <button class="date">Thursday<br>July 9</button>
+            <button class="date">Friday<br>July 10</button>
+            <button class="date">Saturday<br>July 11</button>
+            <button class="date">Sunday<br>July 12</button>
+
+        </div>
+
+        <p id="selected"></p>
+
+        <button id="saveBtn" disabled>
+
+            Save my evening
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- SUCCESS -->
+
+<section id="success" class="screen">
+
+    <div class="card">
+
+        <h1>Reservation successful.</h1>
+
+        <p>
+
+            Acum treci pe Instagram.
+
+        </p>
+
+    </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="email.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
