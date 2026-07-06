@@ -8,7 +8,7 @@ function sendReservation(date){
 
         "service_7gdn8hj",
 
-        "template_mllp0o3",
+        "template_iob8td6",
 
         {
 
